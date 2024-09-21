@@ -1,0 +1,31 @@
+Ejercicios de manipulación de atributos y propiedades
+
+1. Modificar el atributo href de un enlace:
+Selecciona el primer enlace en el menú de navegación y cambia su atributo href para que apunte a "https://www.google.com".
+
+2. Añadir y remover una clase:
+Selecciona el segundo artículo y añádele una clase llamada "highlight". Luego, remueve esa clase después de 3 segundos usando setTimeout.
+
+3. Cambiar el valor de un atributo src:
+Añade una imagen en el HTML (debes incluirla primero en el archivo HTML) y luego, usando JavaScript, cambia el atributo src para que apunte a una nueva imagen.
+
+4. Manipulación del atributo alt de una imagen:
+Selecciona la imagen que has añadido y cambia su atributo alt para que describa correctamente el contenido de la imagen.
+
+5. Añadir un atributo target a un enlace:
+Selecciona el último enlace en el menú y añade el atributo target="_blank" para que se abra en una nueva pestaña.
+
+6. Deshabilitar un botón:
+Crea un botón en tu HTML y utiliza JavaScript para deshabilitarlo agregando el atributo disabled cuando se haga clic en él.
+
+7. Cambiar el atributo id:
+Selecciona el título de la página (h1) y cambia su atributo id a "new-title".
+
+8. Comprobar si un atributo existe:
+Verifica si el primer artículo tiene el atributo "data-id", y si no lo tiene, añádelo con el valor "123".
+
+9. Modificar el contenido de un atributo data-:
+Añade un atributo data-category a uno de los artículos en tu HTML. Luego, usa JavaScript para modificar su valor.
+
+10. Añadir un estilo directamente desde JavaScript:
+Selecciona el elemento <footer> y cambia su color de fondo a "lightgray" usando la propiedad style.
