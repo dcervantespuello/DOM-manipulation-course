@@ -40,7 +40,7 @@ console.log(lastLink);
 // Deshabilitar un botón
 const main = document.querySelector("main");
 const button = document.createElement("button");
-button.innerText = "Click me!";
+button.textContent = "Click me!";
 
 button.onclick = () => {
   button.disabled = true;
