@@ -42,9 +42,11 @@ const main = document.querySelector("main");
 const button = document.createElement("button");
 button.textContent = "Click me!";
 
-button.onclick = () => {
+// La función addEventListener permite agregar varios listeners de eventos
+// La propiedad onclick solo permite un listener de eventos por elemento
+button.addEventListener("click", () => {
   button.disabled = true;
-};
+});
 main.appendChild(button);
 
 // Cambiar el atributo id
