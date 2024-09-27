@@ -1,0 +1,40 @@
+Ejercicios de manipulación de elementos del DOM
+
+1. Modificar el valor de className
+Selecciona el elemento con el id main-title y cambia su clase a new-class.
+
+2. Cambiar los estilos del párrafo
+Cambia el color de texto del párrafo con clase description a rojo usando la propiedad style.
+
+3. Agregar un evento click
+Añade un evento click al botón con id action-button que muestre una alerta con el mensaje "Botón clicado".
+
+4. Usar los métodos de classList
+- Añade la clase highlight al primer elemento de la lista (li).
+- Verifica si el segundo elemento de la lista tiene la clase highlight.
+- Si el tercer elemento de la lista no tiene la clase highlight, añádela, si ya la tiene, quítala usando toggle.
+
+5. Insertar un nuevo elemento
+Crea un nuevo párrafo y añádelo justo después del título principal (h1) utilizando insertAdjacentElement.
+
+6. Modificar el contenido con innerHTML
+Cambia el contenido HTML del primer elemento de la lista a "<strong>Elemento Modificado</strong>".
+
+7. Crear un nuevo elemento con createElement
+Crea un nuevo elemento li con el texto "Elemento 4" y añádelo al final de la lista.
+
+8. Usar append y prepend
+Añade un nuevo párrafo con el texto "Este es el final" al final del div con id container usando append, y otro párrafo con el texto "Este es el principio" al inicio usando prepend.
+
+9. Insertar elementos antes y después
+Inserta un nuevo li con el texto "Elemento 0" antes del primer li y otro li con el texto "Elemento 5" después del último li de la lista usando los métodos before y after.
+
+10. Eliminar elementos
+- Elimina el último elemento li de la lista usando removeChild.
+- Elimina el botón de acción usando el método remove.
+
+11. Clonar un nodo
+Clona el primer elemento li de la lista y añádelo al final de la lista usando cloneNode.
+
+12. Reemplazar un nodo
+Reemplaza el párrafo con clase description por un nuevo párrafo que diga "Descripción modificada" usando replaceWith.
