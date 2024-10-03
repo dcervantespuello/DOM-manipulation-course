@@ -1,0 +1,28 @@
+Ejercicios de manipulación de eventos en el DOM
+
+1. addEventListener: mouseover, mouseout
+Crea un evento mouseover que cambie el color de fondo de un elemento cuando el mouse pase por encima, y un evento mouseout que lo vuelva a su color original cuando el mouse salga del área del elemento.
+
+2. Guardar función callback en variable para agregar como segundo parámetro de addEventListener
+Define una función en una variable y usa esa función como callback al asignar un evento con addEventListener. El evento debe cambiar el texto de un párrafo al hacer clic en él.
+
+3. removeEventListener
+Añade un evento click que cambie el color de un botón. Después de 3 clics, el evento debe ser removido, de modo que ya no responda más a clics.
+
+4. setTimeout
+Usando setTimeout, haz que una alerta se muestre 5 segundos después de hacer clic en un botón.
+
+5. EventObject de un evento
+Captura el objeto Event de un evento click sobre un párrafo y muestra en consola las coordenadas donde ocurrió el clic.
+
+6. preventDefault en un formulario
+Crea un formulario con un campo de texto y un botón de envío. Usa preventDefault para evitar que el formulario se envíe cuando el campo de texto esté vacío y muestra una alerta en ese caso.
+
+7. Propiedad elements de un formulario
+Usa la propiedad elements de un formulario para acceder a todos los campos dentro del formulario y mostrar en consola los valores de cada campo cuando se haga clic en un botón.
+
+8. Agregar eventos de forma dinámica con foreach
+Tienes varios botones en una página. Usa forEach para asignar a cada uno un evento click que muestre el texto de cada botón en la consola.
+
+9. Agregar un solo evento en un elemento padre para modificar a sus elementos hijos
+Usa el concepto de delegación de eventos. Agrega un solo evento click en un contenedor padre que capture los clics en cualquier botón hijo y cambie el texto de dicho botón.
