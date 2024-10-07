@@ -43,7 +43,10 @@ function deleteTask(item) {
 }
 
 function editTask(item) {
-  const newTask = prompt("Por favor, ingrese la nueva tarea");
+  const newTask = prompt(
+    "Por favor, ingrese la nueva tarea",
+    item.firstChild.textContent
+  );
   if (newTask.trim()) {
     item.firstChild.textContent = newTask;
   }
