@@ -29,15 +29,22 @@ function addButton(content, className) {
 
 taskList.addEventListener("click", (event) => {
   const clicked = event.target;
-  if (
-    clicked.classList.contains("delete-btn") &&
-    confirm("¿Está seguro que desea eliminar esta tarea?")
-  ) {
-    clicked.parentElement.remove();
+  if (clicked.classList.contains("delete-btn")) {
+    deleteTask(clicked.parentElement);
   } else if (clicked.classList.contains("edit-btn")) {
-    const newTask = prompt("Por favor, ingrese la nueva tarea");
-    if (newTask.trim()) {
-      clicked.parentElement.firstChild.textContent = newTask;
-    }
+    editTask(clicked.parentElement);
   }
 });
+
+function deleteTask(item) {
+  if (confirm("¿Está seguro que desea eliminar esta tarea?")) {
+    item.remove();
+  }
+}
+
+function editTask(item) {
+  const newTask = prompt("Por favor, ingrese la nueva tarea");
+  if (newTask.trim()) {
+    item.firstChild.textContent = newTask;
+  }
+}
