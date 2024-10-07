@@ -26,3 +26,18 @@ function addButton(content, className) {
   button.className = className;
   return button;
 }
+
+taskList.addEventListener("click", (event) => {
+  const clicked = event.target;
+  if (
+    clicked.classList.contains("delete-btn") &&
+    confirm("¿Está seguro que desea eliminar esta tarea?")
+  ) {
+    clicked.parentElement.remove();
+  } else if (clicked.classList.contains("edit-btn")) {
+    const newTask = prompt("Por favor, ingrese la nueva tarea");
+    if (newTask.trim()) {
+      clicked.parentElement.firstChild.textContent = newTask;
+    }
+  }
+});
