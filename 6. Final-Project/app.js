@@ -92,3 +92,16 @@ function editTaskInLocalStorage(oldTask, newTask) {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }
 }
+
+const themeButton = document.getElementById("theme-toggle");
+const body = document.querySelector("body");
+
+themeButton.addEventListener("click", () => {
+  body.classList.toggle("dark-theme");
+  const theme = body.classList.contains("dark-theme") ? "dark" : "light";
+  localStorage.setItem("theme", theme);
+});
+
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark-theme");
+}
